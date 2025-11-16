@@ -1,0 +1,120 @@
+/* Simple responsive layout */
+:root {
+font-family: system-ui, Arial, sans-serif;
+color: #222;
+background: #f7f7f8;
+line-height: 1.5;
+}
+
+{
+box-sizing: border-box;
+}
+
+.container {
+max-width: 900px;
+margin: 0 auto;
+padding: 16px;
+}
+
+.site-header {
+background: #ffffff;
+border-bottom: 1px solid #e2e2e5;
+padding: 12px 0;
+position: sticky;
+top: 0;
+}
+
+.logo {
+margin: 0;
+display: inline-block;
+font-size: 20px;
+font-weight: 600;
+}
+
+.nav {
+float: right;
+display: flex;
+gap: 12px;
+align-items: center;
+}
+
+.nav a {
+text-decoration: none;
+color: #0b5cff;
+padding: 6px 8px;
+border-radius: 6px;
+}
+
+.hero {
+background: white;
+padding: 28px;
+margin: 18px 0;
+border-radius: 10px;
+box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.hero h2 {
+margin: 0 0 8px 0;
+font-size: 26px;
+}
+
+.button {
+display: inline-block;
+margin-top: 12px;
+padding: 10px 14px;
+text-decoration: none;
+border-radius: 8px;
+background: #0b5cff;
+color: white;
+font-weight: 600;
+}
+
+.cards {
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+gap: 12px;
+margin-bottom: 24px;
+}
+
+.card {
+background: white;
+padding: 14px;
+border-radius: 8px;
+box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.site-footer {
+text-align: center;
+padding: 18px 0;
+color: #666;
+margin-top: 18px;
+}
+
+.about ul.facts {
+list-style: none;
+padding: 0;
+margin: 8px 0 16px 0;
+}
+
+.about li {
+margin: 6px 0;
+}
+
+/* Small screens */
+@media (max-width:600px) {
+.nav {
+float: none;
+justify-content: flex-end;
+}
+
+.logo {
+display: inline-block;
+margin-right: 12px;
+}
+
+.site-header .container {
+display: flex;
+align-items: center;
+gap: 8px;
+}
+}
